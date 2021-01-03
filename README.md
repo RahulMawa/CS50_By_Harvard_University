@@ -8,4 +8,5 @@ This repository is a collection of all the problem set solutions I have programm
 The first course is 'CS50: An Introduction to Computer Science', and the second course is 'CS50: An Introduction to Artificial Intelligence'.
 
 Check out my certificate for 'CS50: An Introduction to Computer Science': 
+Average Score: 95.28% (Check Gradebook.pdf for more details)
 https://drive.google.com/file/d/1Zkn9h8ndXpfbkB5Y0pxSyZDbSBlid5sl/view?usp=sharing
