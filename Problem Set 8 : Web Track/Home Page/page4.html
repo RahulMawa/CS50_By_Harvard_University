@@ -1,0 +1,88 @@
+<DOCTYPE! html>
+
+<html lang="en">
+    <head>
+        <title>
+            Songs I recommend...
+        </title>
+
+        <!-- Some importing of libraries for stylesheets -->
+        <link rel="stylesheet" href= "styles.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+          integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
+          crossorigin="anonymous">
+    </head>
+
+
+    <body style= "background-color: FloralWhite;">
+    <h1>My Favourite Songs / Bands: </h1>
+
+    <!--  The collapsible dropdown list -->
+    <p><h2>POP:</h2></p>
+    <button type="button" class="collapsible">English Bands:</button>
+    <div class="content">
+      <p><a href= "https://open.spotify.com/playlist/37i9dQZF1DXdLtD0qszB1w">The Beatles</a></p>
+      <p><a href= "https://open.spotify.com/playlist/37i9dQZF1DX7KWRIlkUpsl">Maroon 5</a></p>
+      <p><a href= "https://open.spotify.com/playlist/37i9dQZF1DX6p4TJxzMRDe">One DIrection</a></p>
+      <p><a href= "https://open.spotify.com/playlist/37i9dQZF1DX46HBMApdlID">The Chainsmokers</a></p>
+    </div>
+
+    <button type="button" class="collapsible">English Singers / Musicians:</button>
+    <div class="content">
+      <p><a href= "https://open.spotify.com/playlist/37i9dQZF1DXc2aPBXGmXrt">Justin Bieber</a></p>
+      <p><a href= "https://open.spotify.com/playlist/37i9dQZF1DWTDkgFD3ivE6">Halsey</a></p>
+      <p><a href= "https://open.spotify.com/playlist/37i9dQZF1DWWxPM4nWdhyI">Ed Sheeran</a></p>
+      <p><a href= "https://open.spotify.com/playlist/37i9dQZF1DXbraCN8mShma">Marshmello</a></p>
+    </div>
+
+    <button type="button" class="collapsible">Spanish Singers:</button>
+    <div class="content">
+      <p><a href= "https://open.spotify.com/playlist/37i9dQZF1DWTnjl1sI7Jls">Luis Fonsi</a></p>
+      <p><a href= "https://open.spotify.com/playlist/37i9dQZF1DWZIYtHhVF9LO">Shakira</a></p>
+      <p><a href= "https://open.spotify.com/playlist/37i9dQZF1DX7HGyCQ2dcNx">J Balvin</a></p>
+      <p><a href= "https://open.spotify.com/playlist/37i9dQZF1DX66AtErk5xTK">Maluma</a></p>
+    </div>
+
+    <p><h2>ROCK:</h2></p>
+    <button type="button" class="collapsible">Bands:</button>
+    <div class="content">
+      <p><a href= "https://open.spotify.com/playlist/37i9dQZF1DWSNC7AjZWNry">Queen</a></p>
+      <p><a href= "https://open.spotify.com/playlist/37i9dQZF1DX74DnfGTwugU">Guns and Roses</a></p>
+      <p><a href= "https://open.spotify.com/playlist/37i9dQZF1DXec50AjHrNTq">AC/DC</a></p>
+      <p><a href= "https://open.spotify.com/playlist/37i9dQZF1DX9AUVnnnNUND">Eagles</a></p>
+      <p><a href= "https://open.spotify.com/playlist/37i9dQZF1DX82CY3GzF2m6">Nirvana</a></p>
+    </div>
+
+    <p><h2>RAP:</h2></p>
+    <button type="button" class="collapsible">Bands:</button>
+    <div class="content">
+      <p><a href= "https://open.spotify.com/playlist/37i9dQZF1DX1clOuib1KtQ">Eminem</a></p>
+      <p><a href= "https://open.spotify.com/playlist/37i9dQZF1DWU1jy5zm8juq">G-Eazy</a></p>
+      <p><a href= "https://open.spotify.com/playlist/37i9dQZF1DZ06evO1XGbvi">Jay-Z</a></p>
+      <p><a href= "https://open.spotify.com/playlist/37i9dQZF1DWUgX5cUT0GbU">Travis Scott</a></p>
+      <p><a href= "https://open.spotify.com/playlist/37i9dQZF1DZ06evO1kxsTC">Lil Peep</a></p>
+    </div>
+
+    <!-- JScript Code for compressible list-->
+    <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        });
+    }
+    </script>
+
+
+    <h3 class= "body"><a href= "index.html">Back to homepage..?</a></h3>
+
+    </body>
+</html>

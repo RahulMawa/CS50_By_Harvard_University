@@ -1,0 +1,105 @@
+/*General Text formatting for the website*/
+.body
+{
+  font-size: 20px;
+  color: black;
+  text-align: center;
+  font-family: arial;
+}
+
+.header
+{
+  font-size: 35px;
+  font-family: Bebas Neue;
+  color: white;
+  text-align: left;
+}
+
+/*-------------------------------------------------------------------------------*
+/* FOr putting a link on the image when hovered on*/
+.container {
+  position: relative;
+  width: 28.2%;
+  /*height: 500px;*/
+}
+
+.image {
+  display: block;
+  width: 400px;
+  height: 500px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+/*----------------------------------------------------------------------*/
+/* FOr wirting on top of an image */
+.container2 {
+  position: relative;
+  text-align: center;
+  color: white;
+  font-size: 40px;
+
+}
+
+/* Centered text */
+.centered {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* ----------------------------------------------------------------------------- */
+/*Collapsible drop down list*/
+.collapsible {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: #ccc;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}

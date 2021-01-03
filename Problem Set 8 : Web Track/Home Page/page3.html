@@ -1,0 +1,107 @@
+<DOCTYPE! html>
+
+<html lang="en">
+    <head>
+        <title>
+            Movies I recommend...
+        </title>
+
+        <!-- Some importing of libraries for stylesheets -->
+        <link rel="stylesheet" href= "styles.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+          integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
+          crossorigin="anonymous">
+    </head>
+
+
+    <body style= "background-color: FloralWhite;">
+    <h1>My Favourite Movies / TV Shows: </h1>
+
+    <!--  The collapsible dropdown list -->
+    <p><h2>Hollywood Movies:</h2></p>
+    <button type="button" class="collapsible">Old and Classic:</button>
+    <div class="content">
+      <p><a href= "https://en.wikipedia.org/wiki/Mission:_Impossible_(film_series)">Mission Impossible (Series)</a></p>
+      <p><a href= "https://en.wikipedia.org/wiki/Speed_(1994_film)">Speed</a></p>
+      <p><a href= "https://en.wikipedia.org/wiki/Jurassic_Park">Jurassic Park (Series)</a></p>
+      <p><a href= "https://en.wikipedia.org/wiki/List_of_Star_Wars_films">Star Wars (Series)</a></p>
+      <p><a href= "https://en.wikipedia.org/wiki/Harry_Potter_(film_series)">Harry Potter (Series)</a></p>
+    </div>
+
+    <button type="button" class="collapsible">Leonardo Dicaprio:</button>
+    <div class="content">
+      <p><a href= "https://en.wikipedia.org/wiki/Titanic_(1997_film)">Titanic</a></p>
+      <p><a href= "https://en.wikipedia.org/wiki/The_Wolf_of_Wall_Street_(2013_film)">Wolf of Wall Street</a></p>
+      <p><a href= "https://en.wikipedia.org/wiki/Once_Upon_a_Time_in_Hollywood">Once Upon a time in Hollywood</a></p>
+      <p><a href= "https://en.wikipedia.org/wiki/Inception">Inception</a></p>
+    </div>
+
+    <button type="button" class="collapsible">Sci-Fi:</button>
+    <div class="content">
+      <p><a href= "https://en.wikipedia.org/wiki/The_Avengers_(2012_film)">Avengers (Series)</a></p>
+      <p><a href= "https://en.wikipedia.org/wiki/Captain_America:_The_First_Avenger">Captain America (Series)</a></p>
+      <p><a href= "https://en.wikipedia.org/wiki/Suicide_Squad_(film)">Suicide Squad</a></p>
+      <p><a href= "https://en.wikipedia.org/wiki/Joker_(2019_film)">Joker</a></p>
+    </div>
+
+    <p><h2>Hollywood TV Shows:</h2></p>
+    <button type="button" class="collapsible">Enjoyable watch:</button>
+    <div class="content">
+      <p><a href= "https://en.wikipedia.org/wiki/The_Office">The Office (US Series)</a></p>
+      <p><a href= "https://en.wikipedia.org/wiki/Friends">Friends</a></p>
+      <p><a href= "https://en.wikipedia.org/wiki/Rick_and_Morty">Rick and Morty</a></p>
+      <p><a href= "https://en.wikipedia.org/wiki/Narcos">Narcos</a></p>
+      <p><a href= "https://en.wikipedia.org/wiki/The_Simpsons">The Simpsons</a></p>
+      <p><a href= "https://en.wikipedia.org/wiki/South_Park">South Park</a></p>
+      <p><a href= "https://en.wikipedia.org/wiki/13_Reasons_Why">13 Reasons Why</a></p>
+    </div>
+
+    <p><h2>Bollywood Movies:</h2></p>
+    <button type="button" class="collapsible">Old and Classic:</button>
+    <div class="content">
+      <p><a href= "https://en.wikipedia.org/wiki/Housefull_(2010_film)">Housefull (Series)</a></p>
+      <p><a href= "https://en.wikipedia.org/wiki/Dilwale_Dulhania_Le_Jayenge">DDLJ</a></p>
+      <p><a href= "https://en.wikipedia.org/wiki/Dhoom">Dhoom (Series)</a></p>
+      <p><a href= "https://en.wikipedia.org/wiki/Hum_Aapke_Hain_Koun..!">Hum Aapke Hain Koun?</a></p>
+      <p><a href= "https://en.wikipedia.org/wiki/Sholay">Sholay</a></p>
+    </div>
+
+    <button type="button" class="collapsible">Akshay Kumar:</button>
+    <div class="content">
+      <p><a href= "https://en.wikipedia.org/wiki/Gabbar_Is_Back">Gabbar Is Back</a></p>
+      <p><a href= "https://en.wikipedia.org/wiki/Toilet:_Ek_Prem_Katha">Toilet: Ek Prem Katha</a></p>
+      <p><a href= "https://en.wikipedia.org/wiki/Hera_Pheri_(film_series)">Hera Pheri (Series)</a></p>
+      <p><a href= "https://en.wikipedia.org/wiki/Special_26">Special 26</a></p>
+    </div>
+
+    <button type="button" class="collapsible">Other notable work:</button>
+    <div class="content">
+      <p><a href= "https://en.wikipedia.org/wiki/Udta_Punjab">Udta Punjab</a></p>
+      <p><a href= "https://en.wikipedia.org/wiki/Sanju">Sanju</a></p>
+      <p><a href= "https://en.wikipedia.org/wiki/Ae_Dil_Hai_Mushkil">Ae Dil Hai Mushkil</a></p>
+      <p><a href= "https://en.wikipedia.org/wiki/Simmba">Simmba</a></p>
+    </div>
+
+    <!-- JScript Code for compressible list-->
+    <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        });
+    }
+    </script>
+
+
+    <h3 class= "body"><a href= "page4.html">Want to know more about me..? (click for page 4)</a></h3>
+
+    </body>
+</html>
